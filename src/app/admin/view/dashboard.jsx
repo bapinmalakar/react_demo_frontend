@@ -11,8 +11,8 @@ class AdminDashboardView extends Component {
     render() {
         return (
             <div className="dashboard">
-                <div> <LeftOption /> </div>
-                <div> <DashboardContainer /> </div>
+                <div className="option-div"> <LeftOption /> </div>
+                <div className="container-div"> <DashboardContainer /> </div>
             </div>
         );
     }
