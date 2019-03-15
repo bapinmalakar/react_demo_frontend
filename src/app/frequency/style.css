@@ -1,0 +1,21 @@
+.frequency-div{
+    margin-left: 34%;
+    margin-top: 4%;
+} 
+.btn {
+    margin-left: 2%;
+}
+
+.table_design {
+    width: 37%;
+    margin-top: 2%;
+    text-align: center;
+    margin-left: 24%;
+}
+
+p{
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: darkred;
+}
