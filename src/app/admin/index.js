@@ -1,12 +1,14 @@
 import React, {Component} from 'react';
-import DashboardView from './dashboard';
+import Dashboard from './dashboard';
+
+import './css/index.css';
 
 class AdminView extends Component {
     constructor(props) {
         super(props);
     }
     render() {
-        return (<DashboardView />);
+        return (<Dashboard />);
     }
 }
 

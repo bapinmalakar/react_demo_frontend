@@ -1,12 +1,20 @@
 import React from 'react';
-import AdminView from './app/admin/view';
-import FrequencyComponent from './app/frequency/view';
+// import AdminView from './app/admin/component';
+// import FrequencyComponent from './app/frequency/view';
+import AppRoute from './route-config';
+import { connect } from "react-redux";
 
-export default class RootHtml extends React.Component {
+const mapStateToProps = state=> {return {baseHttpClass: state.baseHttpClass}}
+class RootHtml extends React.Component {
+    
     constructor(props) {
         super(props);
     }
+
     render() {
-        return (<FrequencyComponent />)
+        return (<AppRoute />)
     }
 }
+
+const ReduxApp = connect(mapStateToProps)(RootHtml);
+export default ReduxApp;
