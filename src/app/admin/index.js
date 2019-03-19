@@ -1,15 +1,13 @@
-import React, {Component} from 'react';
-import Dashboard from './dashboard';
+import React, { Component } from 'react';
+import DashBoardOptions from './dashboard-options';
 
-import './css/index.css';
+export default class DashBoard extends Component {
+    constructor(props) { super(props); }
 
-class AdminView extends Component {
-    constructor(props) {
-        super(props);
-    }
     render() {
-        return (<Dashboard />);
+        return (<div className="dashboard">
+            <div className="option-div"> <DashBoardOptions {...this.props}/> </div>
+        </div>); 
+
     }
 }
-
-export default AdminView;

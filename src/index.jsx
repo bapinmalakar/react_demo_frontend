@@ -1,8 +1,9 @@
 import React from 'react';
 import AppRoute from './route-config';
+import { BrowserRouter as Router, Link, Route } from 'react-router-dom';
 import { connect } from "react-redux";
 
-const mapStateToProps = state=> {return {baseHttpClass: state.baseHttpClass}}
+const mapStateToProps = state => { return { baseHttpClass: state.baseHttpClass , article: state.article} }
 class RootHtml extends React.Component {
 
     constructor(props) {
@@ -10,9 +11,11 @@ class RootHtml extends React.Component {
     }
 
     render() {
-        return (<AppRoute />)
+        return (
+            <AppRoute {...this.props} />
+        )
     }
 }
 
 const ReduxApp = connect(mapStateToProps)(RootHtml);
-export default ReduxApp;
+export default RootHtml;

@@ -6,4 +6,4 @@ class HttpConfigure {
     }
 }
 
-export default BaseService = new HttpConfigure();
+export default new HttpConfigure();
