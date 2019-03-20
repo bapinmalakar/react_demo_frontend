@@ -30,3 +30,13 @@ li:hover {
     border-bottom: none;
     color: red;
 }
+
+.home-button {
+    margin-top: 14%;
+    width: 50%;
+    margin-left: 25%;
+}
+
+.btn {
+    margin-left: 5%;
+}

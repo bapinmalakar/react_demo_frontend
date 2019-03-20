@@ -1,7 +1,25 @@
-.add-article-div {
+.add-div {
     margin-top: 4%;
     width: 28%;
+    float: left;
 }
+
+.list-div {
+    margin-top: 4%;
+    margin-left: 10%;
+    width: 50%;
+    float: left;
+}
+
+.no-data {
+    text-align: center;
+    font-family: -webkit-pictograph;
+    font-weight: bold;
+}
+
 .input-class {
     margin-top: 4%;
+}
+ul.ant-pagination.ant-table-pagination{
+    display: none;
 }

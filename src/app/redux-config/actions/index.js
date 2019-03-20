@@ -1,11 +1,18 @@
 
-import {ACTIONS_TYPE} from './../constants';
+import { ACTIONS_TYPE } from './../constants';
 
-export function updateBaseHttpService(payload) {
-    return { type: ACTIONS_TYPE.BASE_HTTP_CLASS, payload }
+export function addUser(payload) {
+    return { type: ACTIONS_TYPE.ADD_USER, payload }
 };
 
 export function addArticle(payload) {
-    console.log('Payload: ', payload);
-    return {type: ACTIONS_TYPE.ADD_ARTICLE, payload}
+    return { type: ACTIONS_TYPE.ADD_ARTICLE, payload }
+}
+
+export function setRouteState(payload) {
+    return { type: ACTIONS_TYPE.SET_CURRENT_ROUTE, payload }
+}
+
+export function setLoggedUser(payload) {
+    return { type: ACTIONS_TYPE.SET_LOGGED_USER, payload }
 }
