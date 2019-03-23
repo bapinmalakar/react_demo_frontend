@@ -11,3 +11,33 @@
 .input-div {
     margin-top: 2%;
 }
+
+.user-details {
+    margin-top: 3%;
+    text-align: center;
+}
+h1:first-child {
+    font-size: 15px;
+}
+.article-list{
+    width: 90%;
+    margin-left: 9%;
+}
+
+.articles {
+    font-size: 20px;
+    font-family: -webkit-pictograph;
+    text-transform: capitalize;
+    margin-left: 4%;
+}
+.invalid {
+    margin-top: 10%;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+.detail-div {
+    margin-top: 10%;
+    margin-left: 4%;
+    text-align: center;
+}

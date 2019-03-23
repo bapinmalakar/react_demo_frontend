@@ -13,7 +13,7 @@ class UserManageComponent extends Component {
         super(props);
         this.user_storage = 'users';
 
-        this.state = {
+        this.state = { //save user details
             name: '',
             user_id: '',
             password: ''
@@ -54,7 +54,7 @@ class UserManageComponent extends Component {
         } else {
             data = JSON.parse(data);
             data.push(this.state);
-            localStorage.setItem(this.user_storage, data);
+            localStorage.setItem(this.user_storage, JSON.stringify(data));
         }
     }
 
@@ -72,7 +72,7 @@ class UserManageComponent extends Component {
                 <Input type="password" placeholder="password for login" name="password" value={this.state.password} onChange={this.textValueChange} />
             </div>
             <div className="input-class">
-                <Button type="danger" onClick={this.addUser}>Add User</Button>
+                <Button type="danger" onClick={this.addUser} disabled={!this.state.name || !this.state.password || !this.state.user_id}>Add User</Button>
             </div>
         </div>;
 

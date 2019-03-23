@@ -7,7 +7,6 @@ class DashboardOptionView extends Component {
     render() {
         return (
             <ul>
-                <li> <Link to="/admin/analyze">Article Analytics</Link></li>
                 <li> <Link to="/admin/article">Article Manage</Link></li>
                 <li> <Link to="/admin/user">User Manage</Link></li>
             </ul>)

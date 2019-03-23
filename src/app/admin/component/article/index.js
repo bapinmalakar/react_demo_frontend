@@ -52,8 +52,6 @@ class ArticleComponent extends Component {
             article_author: '',
             article_details: '',
             article_id: this.generateArticleId(),
-            total_time_viewed: 0,
-            view_by_user: {}
         }
         this.setArticleForLongTime();
         this.setState(obj);
@@ -121,7 +119,7 @@ class ArticleComponent extends Component {
                         <Input placeholder="article_id" value={this.state.article_id} readOnly />
                     </div>
                     <div className="input-class">
-                        <Button type="danger" onClick={this.addArticle}>Add</Button>
+                        <Button type="danger" onClick={this.addArticle} disabled={!this.state.article_author || !this.state.article_details || !this.state.article_name}>Add</Button>
                     </div>
                 </div>
                 {article_list}
